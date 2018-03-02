@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Karolina G</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet"  href="main.css">
+    <link rel="stylesheet"  href="responsive.css">
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <div class="header-inner">
+        <img class="header-logo" height="100px" width="100px" src="images/logo2.png" alt="Karolina Gauvain Logo">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Works</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="header-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="content">
+        <section class="middle">
+        <section class="presentation">
+          <article class="description">
+              <h1 class="title">Hi! I'm Karolina,<span>a Front-end Developer
+              </h1>
+                <h4 class="name">
+                </h4>
+            <p>Google Scholar. An artistic math lover!</p>
+          </article>
+        </section>
+        <section class="my-photo">
+          <div class="photo">
+            <img class="portrait" height="200px" width="200px" src="images/IMG_3582_gr.jpg" alt="Photo of Karolina Gauvain">
+          </div>
+        </section>
+      </section>
+
+        <section class="recent-projects">
+          <h2 class="projects-title"><a href="#">Recent projects</a></h2>
+          <section class="flex-projects">
+            <div class="project">
+              <div class="thumbnail-container">
+              <div class="project-thumbnail">
+                <img height="200px" width="200px" src='images/Animal_trading_card_2.jpg' alt="Picture of Animal Trading Card Project">
+              </div>
+            </div>
+              <h3 class="project-title"><a href="https://codepen.io/Karolik/pen/bYypZK/">Animal Trading Card</a></h3>
+              <p class="project-description">Mockup CSS
+              </p>
+            </div>
+            <div class="project">
+                <div class="thumbnail-container">
+                <div class="project-thumbnail">
+                  <img height="200px" width="200px" src='images/Pixel_art_maker.jpg' alt="Picture of Pixel Art Maker Project">
+                </div>
+              </div>
+                <h3 class="project-title"><a href="#">Pixel Art Maker</a></h3>
+                <p class="project-description">Java Script
+                </p>
+              </div>
+            <div class="project">
+                <div class="thumbnail-container">
+                <div class="project-thumbnail">
+                    <img height="200px" width="200px" src='images/Mockup_to_article.png' alt="Picture of Article Project">
+                </div>
+              </div>
+                <h3 class="project-title"><a href="#">Article</a></h3>
+                <p class="project-description">Website
+                </p>
+              </div>
+          </section>
+        </section>
+      </section>
+    </div>
+      <footer>
+        <ul>
+          <li><a href="#">Contact me</a></li>
+          <li><a href="#">RSS</a></li>
+          <li class="copy">Copyright 2018, Karolina Gauvain</li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('.header-menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
