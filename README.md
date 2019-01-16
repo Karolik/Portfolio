@@ -6,7 +6,7 @@ The website presents my FEWD projects.
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Languages used to build the website](#languages_used_to_build_the_website)
+* [Languages used to build the website](#languages-used-to-build-the-website)
 * [Contributing](#contributing)
 * [Authors](#authors)
 * [License](#license)
